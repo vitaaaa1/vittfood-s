@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kontak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Kontak</h1>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/produk">Produk</a>
+        <a href="/kontak">Kontak</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <form method="POST">
+
+        <label>Nama:</label><br>
+        <input type="text" name="nama" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <button type="submit">Kirim</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
