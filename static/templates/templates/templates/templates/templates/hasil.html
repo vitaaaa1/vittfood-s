@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Data Kontak</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Data yang Diinput</h2>
+
+        <p>Nama: {{ nama }}</p>
+
+        <p>Email: {{ email }}</p>
+    </div>
+
+</div>
+
+</body>
+</html>
