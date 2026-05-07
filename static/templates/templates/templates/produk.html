@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Produk Digital</h1>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/produk">Produk</a>
+        <a href="/kontak">Kontak</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    {% for product in products %}
+    <div class="card">
+        <h2>{{ product.nama }}</h2>
+
+        <p>{{ product.deskripsi }}</p>
+
+        <h3>{{ product.harga }}</h3>
+    </div>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>
